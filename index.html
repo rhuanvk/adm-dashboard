@@ -1,14 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <title>Dashboard</title>
 </head>
+
 <body>
-    
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="./img/logoipsum.svg" alt="Logo" height="32px">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <i>-</i>
+                    <p>Overview</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Tickets</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Suggestions</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Costumers</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Agents</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Documentation</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i>-</i>
+                    <p>Settings</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Support</p>
+                </li>
+                <li>
+                    <i>-</i>
+                    <p>Privacy</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <header class="header">
+            <h1>Overview</h1>
+            <div class="icons">
+                <i>ic</i>
+                <i>ic</i>
+            </div>
+            <p class="username">User Name</p>
+            <div class="user-img">
+                <img src="" alt="">
+            </div>
+        </header>
+
+        <div class="ticket-cards">
+            <div class="card">
+                <p>Open</p>
+                <p>26</p>
+            </div>
+            <div class="card">
+                <p>Unresolved</p>
+                <p>11</p>
+            </div>
+            <div class="card">
+                <p>On hold</p>
+                <p>19</p>
+            </div>
+            <div class="card">
+                <p>Overdue</p>
+                <p>16</p>
+            </div>
+        </div>
+
+        <div class="graph-container">
+            <div class="graph">
+                <p class="graph-title">Today's stats</p>
+                <img src="" alt="">
+            </div>
+            <div class="stats-container">
+                <div class="stats-item">
+                    <p>Resolved</p>
+                    <p>449</p>
+                </div>
+                <div class="stats-item">
+                    <p>Received</p>
+                    <p>537</p>
+                </div>
+                <div class="stats-item">
+                    <p>Average response time</p>
+                    <p>33m</p>
+                </div>
+                <div class="stats-item">
+                    <p>Resolution rate</p>
+                    <p>92%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-container">
+            <div class="data-item">
+                <div class="item-header">
+                    <div class="item-title">
+                        <h2>Unresolved Tickets</h2>
+                        <a href="#">View details</a>
+                    </div>
+                    <p>Group: <span>Support</span></p>
+                </div>
+                <div class="item-info">
+                    <p>Waiting on feature request</p>
+                    <p></p>
+                </div>
+                <div class="item-info">
+                    <p>Awaiting for customer response</p>
+                    <p></p>
+                </div>
+                <div class="item-info">
+                    <p>Awaiting developer fix</p>
+                    <p></p>
+                </div>
+                <div class="item-info">
+                    <p>Pending</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="data-item">
+                <div class="item-header">
+                    <div class="item-title">
+                        <h2>Pending Tasks</h2>
+                        <a href="#">View all</a>
+                    </div>
+                    <p>Today</p>
+                </div>
+                <div class="item-info">
+                    <p>Answer pending ticket</p>
+                    <p class="status">Urgent</p>
+                </div>
+                <div class="item-info">
+                    <p>Create new ticket</p>
+                    <p class="status">New</p>
+                </div>
+                <div class="item-info">
+                    <p>Update ticket status</p>
+                    <p class="status">Default</p>
+                </div>
+                <div class="item-info">
+                    <p>Close answered ticket</p>
+                    <p class="status">Assigned</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
